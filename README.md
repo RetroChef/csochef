@@ -1,4 +1,4 @@
-# csochef
+# Description
 Compression or decompression tool for ISO/CSO 
 
 # CSOChef
