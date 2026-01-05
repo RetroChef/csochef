@@ -36,7 +36,8 @@ Works on **Windows, Linux, and MacOS**.
 4. Run from Command Prompt:
 ```bash
 csochef.exe compress demo.iso demo.cso
-csochef.exe decompress demo.cso demo_decompressed.iso```
+csochef.exe decompress demo.cso demo_decompressed.iso
+```
 
 ### Option 2: Run from Python
 
