@@ -50,12 +50,12 @@ cd csochef
 
 ### Start compressing/decompressing:
 
-###### Compress ISO to CSO
+##### Compress ISO to CSO
 ```bash
 python csochef.py compress demo.iso demo.cso
 ```
 
-###### Decompress CSO to ISO
+##### Decompress CSO to ISO
 ```bash
 python csochef.py decompress demo.cso demo_decompressed.iso
 ```
@@ -67,7 +67,7 @@ python csochef.py decompress demo.cso demo_decompressed.iso
 python csochef.py <mode> <input> <output> [options]
 ```
 
-## Arguments
+### Arguments
 ```bash
 mode - Choose compress to create a CSO, or decompress to extract an ISO
 input - Input file path (ISO for compress, CSO for decompress)
@@ -108,7 +108,7 @@ csochef.exe decompress demo.cso demo_decompressed.iso -mt
 ```bash
 csochef.exe compress demo.iso demo.cso -a 1 -l 7 --verify
 ```
-### Notes
+## Notes
 
 Multithreading only applies to decompression, not compression.
 
