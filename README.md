@@ -35,18 +35,16 @@ Works on **Windows, Linux, and MacOS**.
 3. Place it in a folder with your ISO or CSO file.  
 4. Run from Command Prompt:
 
-```bash
-csochef.exe compress demo.iso demo.cso
-csochef.exe decompress demo.cso demo_decompressed.iso
+`csochef.exe compress demo.iso demo.cso`
+`csochef.exe decompress demo.cso demo_decompressed.iso`
 
 ### Option 2: Run from Python
 
 1. Make sure Python 3.10 (or higher) is installed.
 2. Clone this repository:
 
-```bash
-git clone https://github.com/RetroChef/csochef.git
-cd csochef
+`git clone https://github.com/RetroChef/csochef.git`
+`cd csochef`
 
 ### Start compressing/decompressing:
 
