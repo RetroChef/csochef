@@ -50,12 +50,12 @@ cd csochef
 
 ### Start compressing/decompressing:
 
-# Compress ISO to CSO
+###### Compress ISO to CSO
 ```bash
 python csochef.py compress demo.iso demo.cso
 ```
 
-# Decompress CSO to ISO
+###### Decompress CSO to ISO
 ```bash
 python csochef.py decompress demo.cso demo_decompressed.iso
 ```
