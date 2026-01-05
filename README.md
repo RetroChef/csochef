@@ -6,7 +6,7 @@ Can be used even by users without Python installed (can be compiled into an exec
 
 Works on **Windows, Linux, and MacOS**.
 
----
+
 
 ## Features
 - Compress ISO → CSO  
@@ -19,13 +19,12 @@ Works on **Windows, Linux, and MacOS**.
 - Works with most standard CSOs (alignment 0–3 fully supported)  
 - Temporary verification ISO automatically cleaned up  
 
----
+
 
 ## Requirements
 - Python 3.10+ (Optional, only if you're running `csochef.py`)  
 - `zlib` (standard Python module, only if running `csochef.py`)  
 
----
 
 ## Installation
 
@@ -60,7 +59,6 @@ python csochef.py compress demo.iso demo.cso
 python csochef.py decompress demo.cso demo_decompressed.iso
 ```
 
----
 
 ## Usage
 ```bash
