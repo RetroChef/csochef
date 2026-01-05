@@ -34,8 +34,8 @@ Works on **Windows, Linux, and MacOS**.
 2. Download `csochef.exe`.  
 3. Place it in a folder with your ISO or CSO file.  
 4. Run from Command Prompt:
-
-```csochef.exe compress demo.iso demo.cso
+```bash
+csochef.exe compress demo.iso demo.cso
 csochef.exe decompress demo.cso demo_decompressed.iso```
 
 ### Option 2: Run from Python
