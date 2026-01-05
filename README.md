@@ -84,27 +84,27 @@ ouput - Output file path (CSO for compress, ISO for decompress)
 ```
 ### Examples
 
-## Compress ISO to CSO with default settings:
+#### Compress ISO to CSO with default settings:
 ```bash
 csochef.exe compress demo.iso demo.cso
 ```
-## Compress ISO with alignment 2 and compression level 5
+#### Compress ISO with alignment 2 and compression level 5
 ```bash
 csochef.exe compress demo.iso demo.cso -a 2 -l 5
 ```
-## Compress ISO and verify CSO integrity
+#### Compress ISO and verify CSO integrity
 ```bash
 csochef.exe compress demo.iso demo.cso --verify
 ```
-## Decompress CSO to ISO:
+#### Decompress CSO to ISO:
 ```bash
 csochef.exe decompress demo.cso demo_decompressed.iso
 ```
-## Decompress CSO to ISO using multithreading for faster extraction:
+#### Decompress CSO to ISO using multithreading for faster extraction:
 ```bash
 csochef.exe decompress demo.cso demo_decompressed.iso -mt
 ```
-## Compress ISO with all options (alignment, level, verify)
+#### Compress ISO with all options (alignment, level, verify)
 ```bash
 csochef.exe compress demo.iso demo.cso -a 1 -l 7 --verify
 ```
