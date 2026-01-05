@@ -43,67 +43,71 @@ csochef.exe decompress demo.cso demo_decompressed.iso
 
 1. Make sure Python 3.10 (or higher) is installed.
 2. Clone this repository:
-
-`git clone https://github.com/RetroChef/csochef.git`
-`cd csochef`
+```bash
+git clone https://github.com/RetroChef/csochef.git
+cd csochef
+```
 
 ### Start compressing/decompressing:
 
 # Compress ISO to CSO
 ```bash
 python csochef.py compress demo.iso demo.cso
+```
 
 # Decompress CSO to ISO
 ```bash
 python csochef.py decompress demo.cso demo_decompressed.iso
+```
 
 ---
 
 ## Usage
 ```bash
 python csochef.py <mode> <input> <output> [options]
+```
 
+## Arguments
 ```bash
-Arguments
 mode - Choose compress to create a CSO, or decompress to extract an ISO
 input - Input file path (ISO for compress, CSO for decompress)
 ouput - Output file path (CSO for compress, ISO for decompress)
+```
 
 ### Options
 
 ```bash
-Options
 -l, --level            Compression level 0–9. 0 = fast/larger, 9 = small/slower
 -a, --align            Padding alignment 0–6. Higher numbers = faster but may break some decompressors
 --verify               Verify CSO by decompressing and comparing SHA1 hash with original ISO
 -mt, --multithread     Enable multithreaded decompression for faster performance
-
+```
 ### Examples
 
 ## Compress ISO to CSO with default settings:
 ```bash
 csochef.exe compress demo.iso demo.cso
-
+```
 ## Compress ISO with alignment 2 and compression level 5
 ```bash
 csochef.exe compress demo.iso demo.cso -a 2 -l 5
-
+```
 ## Compress ISO and verify CSO integrity
 ```bash
 csochef.exe compress demo.iso demo.cso --verify
-
+```
 ## Decompress CSO to ISO:
 ```bash
 csochef.exe decompress demo.cso demo_decompressed.iso
-
+```
 ## Decompress CSO to ISO using multithreading for faster extraction:
 ```bash
 csochef.exe decompress demo.cso demo_decompressed.iso -mt
-
+```
 ## Compress ISO with all options (alignment, level, verify)
 ```bash
 csochef.exe compress demo.iso demo.cso -a 1 -l 7 --verify
-
+```
 ### Notes
 
 Multithreading only applies to decompression, not compression.
